@@ -1,5 +1,5 @@
 /*
-https://www.geeksforgeeks.org/problems/union-of-two-arrays3538/1?utm=codolio
+https://www.geeksforgeeks.org/problems/union-of-two-arrays3538/1
 Union of Arrays with Duplicates
 Difficulty: Easy
 
