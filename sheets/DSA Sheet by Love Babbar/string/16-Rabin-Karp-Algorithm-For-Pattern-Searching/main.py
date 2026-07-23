@@ -30,8 +30,6 @@ Time Complexity: O(n + m)
 Auxiliary Space: O(m)
 """
 
-
-
 txt = "geeksforgeeks"
 pat = "geek"
 
@@ -56,3 +54,24 @@ while i < m:
         else:
             length_idx = LPS[length_idx - 1]
 
+
+result = []
+
+i = 0
+j = 0
+
+while i < n:
+    if txt[i] == pat[j]:
+        i += 1
+        j += 1
+        if j == m:
+            result.append(i - m)
+            j = LPS[j - 1]
+
+    else:
+        if j != 0:
+            j = LPS[j - 1]
+        else:
+            i += 1
+
+print(result)
