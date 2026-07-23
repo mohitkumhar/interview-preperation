@@ -79,4 +79,4 @@ def printSequence(S):
     return ans
 
 
-print(printSequence("MOHIT"))
+printSequence("MOHIT")
