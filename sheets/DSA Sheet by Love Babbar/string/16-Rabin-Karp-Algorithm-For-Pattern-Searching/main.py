@@ -29,3 +29,30 @@ Expected Complexities
 Time Complexity: O(n + m)
 Auxiliary Space: O(m)
 """
+
+
+
+txt = "geeksforgeeks"
+pat = "geek"
+
+n = len(txt)
+m = len(pat)
+
+LPS = [0] * m
+LPS[0] = 0
+length_idx = 0
+
+i = 1
+
+while i < m:
+    if pat[i] == pat[length_idx]:
+        length_idx += 1
+        LPS[i] = length_idx
+        i += 1
+    else:
+        if length_idx == 0:
+            LPS[length_idx] = 0
+            i += 1
+        else:
+            length_idx = LPS[length_idx - 1]
+
