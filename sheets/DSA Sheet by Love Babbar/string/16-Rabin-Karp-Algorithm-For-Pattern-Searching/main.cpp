@@ -70,5 +70,37 @@ int main()
                 length_idx = LPS[length_idx - 1];
         }
     }
+
+    int i = 0;
+    int j = 0;
+
+    vector<int> result;
+
+    while (i < n)
+    {
+        if (s[i] == pattern[j])
+        {
+            i++;
+            j++;
+            if (j == m)
+            {
+                result.push_back(i - m);
+                j = LPS[j - 1];
+            }
+        }
+        else
+        {
+            if (j == 0)
+                i++;
+            else
+                j = LPS[j - 1];
+        }
+    }
+
+
+    
+    for (int i = 0; i < result.size(); i++)
+        cout << result[i] << " ";
+
     return 0;
 }
