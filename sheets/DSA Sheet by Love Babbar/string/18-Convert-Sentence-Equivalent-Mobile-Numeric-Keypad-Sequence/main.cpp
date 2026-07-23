@@ -72,18 +72,16 @@ int main()
         {'X', "99"},
         {'Y', "999"},
         {'Z', "9999"},
-        {' ', "0"}
-    };
+        {' ', "0"}};
 
     string s = "MOHIT";
-    
+
     string ans = "";
 
-    for (char c: s)
+    for (char c : s)
         ans = ans + map[c];
 
     cout << ans << endl;
 
     return 0;
 }
-
