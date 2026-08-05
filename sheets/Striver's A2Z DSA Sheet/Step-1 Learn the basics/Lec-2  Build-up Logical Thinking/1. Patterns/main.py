@@ -267,3 +267,36 @@ print()
 print()
 print()
 
+
+"""
+1             1
+1 2         2 1
+1 2 3     3 2 1
+1 2 3 4 4 3 2 1
+"""
+
+n = 4
+spaces = 6
+
+for i in range(n):
+    num = 1
+    for j in range(i + 1):
+        print(num, end=" ")
+        num += 1
+    
+    for k in range(spaces):
+        print(" ", end=" ")
+    spaces -= 2
+    
+    num = i + 1
+    for l in range(i + 1):
+        print(num, end=" ")
+        num -= 1
+    
+    
+    print()
+
+print()
+print()
+print()
+
