@@ -148,3 +148,28 @@ print()
 print()
 print()
 
+
+"""
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *
+        *
+"""
+
+n = 5
+stars = 9
+
+for i in range(n):
+    for j in range(i):
+        print("", end="  ")
+     
+    for k in range(stars):
+        print("*", end=" ")
+    print()
+    stars -= 2
+
+
+print()
+print()
+print()
