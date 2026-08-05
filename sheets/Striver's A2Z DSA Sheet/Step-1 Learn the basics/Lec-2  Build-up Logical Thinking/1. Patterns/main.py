@@ -58,3 +58,27 @@ for i in range(n):
 print()
 print()
 print()
+
+
+
+"""
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+"""
+
+n = 5
+
+val = 0
+for i in range(n):
+    val += 1
+    for j in range(i + 1):
+        print(val, end=" ")
+    print()
+
+
+print()
+print()
+print()
