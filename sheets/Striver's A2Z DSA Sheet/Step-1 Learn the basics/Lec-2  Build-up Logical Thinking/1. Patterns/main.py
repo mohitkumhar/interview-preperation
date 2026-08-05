@@ -243,3 +243,27 @@ print()
 print()
 print()
 
+
+"""
+1
+0 1
+1 0 1
+0 1 0 1
+1 0 1 0 1
+"""
+
+n = 5
+flag = 0
+
+for i in range(n):
+    flag = 0 if flag == 1 else 1
+    temp = flag
+    for j in range(i + 1):
+        print(temp, end=" ")
+        temp = 0 if temp == 1 else 1
+    print()
+
+print()
+print()
+print()
+
