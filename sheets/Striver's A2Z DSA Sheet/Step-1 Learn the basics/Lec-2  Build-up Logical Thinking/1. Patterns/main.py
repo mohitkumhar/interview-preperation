@@ -389,3 +389,36 @@ print()
 print()
 print()
     
+
+"""
+      A
+    A B A
+  A B C B A
+A B C D C B A
+"""
+
+n = 4
+
+for i in range(n):
+    char = 65
+    
+    for j in range(n - i):
+        print("", end="  ")
+    
+    for k in range(i + 1):
+        print(chr(char), end=" ")
+        char += 1
+        
+    char -= 2
+    for l in range(i):
+        print(chr(char), end=" ")
+        char -= 1
+        
+    print()
+    
+    
+print()
+print()
+print()
+    
+    
