@@ -504,3 +504,62 @@ for i in range(n):
 print()
 print()
 print()
+
+
+"""
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+"""
+
+n = 5
+
+spaces = 2 * (n - 1)
+
+# Upper half
+for i in range(1, n + 1):
+    # Left stars
+    for j in range(i):
+        print("*", end="")
+
+    # Middle spaces
+    for j in range(spaces):
+        print(" ", end="")
+
+    # Right stars
+    for j in range(i):
+        print("*", end="")
+
+    spaces -= 2
+    print()
+
+spaces = 2
+
+# Lower half
+for i in range(n - 1, 0, -1):
+    # Left stars
+    for j in range(i):
+        print("*", end="")
+
+    # Middle spaces
+    for j in range(spaces):
+        print(" ", end="")
+
+    # Right stars
+    for j in range(i):
+        print("*", end="")
+
+    spaces += 2
+    print()
+
+
+print()
+print()
+print()
+
