@@ -422,3 +422,26 @@ print()
 print()
     
     
+"""
+E 
+D E 
+C D E 
+B C D E 
+A B C D E 
+"""
+    
+n = 5
+
+for i in range(n):
+    char = 65 + (n - i - 1)
+
+    for k in range(i + 1):
+        print(chr(char), end=" ")
+        char += 1
+
+    print()
+    
+
+print()
+print()
+print()
