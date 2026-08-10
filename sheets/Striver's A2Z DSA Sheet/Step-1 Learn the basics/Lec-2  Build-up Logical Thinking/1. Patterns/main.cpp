@@ -148,6 +148,30 @@ int main()
         cout << endl;
     }
 
+    cout << "\n\n\n";
+
+    /*
+     * * * * * * * * *
+     * * * * * * *
+     * * * * *
+     * * *
+     *
+     */
+    n = 5;
+    int stars = 9;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            cout << "  ";
+        }
+        for (int k = 0; k < stars; k++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+        stars -= 2;
+    }
 
     return 0;
 }
