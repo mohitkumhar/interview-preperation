@@ -273,5 +273,39 @@ int main()
 
     cout << "\n\n\n";
 
+    /*
+    1             1
+    1 2         2 1
+    1 2 3     3 2 1
+    1 2 3 4 4 3 2 1
+    */
+    n = 4;
+    int spaces = 6;
+    for (int i = 0; i < n; i++)
+    {
+        int num = 1;
+        for (int j = 0; j < i + 1; j++)
+        {
+            cout << num << " ";
+            num += 1;
+        }
+
+        for (int k = 0; k < spaces; k++)
+        {
+            cout << "  "; // Python code uses two spaces per iteration here
+        }
+        spaces -= 2;
+
+        num = i + 1;
+        for (int l = 0; l < i + 1; l++)
+        {
+            cout << num << " ";
+            num -= 1;
+        }
+        cout << endl;
+    }
+
+    cout << "\n\n\n";
+
     return 0;
 }
