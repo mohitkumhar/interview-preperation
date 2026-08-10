@@ -248,5 +248,30 @@ int main()
         cout << endl;
     }
 
+    cout << "\n\n\n";
+
+    /*
+    1
+    0 1
+    1 0 1
+    0 1 0 1
+    1 0 1 0 1
+    */
+    n = 5;
+    int flag = 0;
+    for (int i = 0; i < n; i++)
+    {
+        flag = (flag == 1) ? 0 : 1;
+        int temp = flag;
+        for (int j = 0; j < i + 1; j++)
+        {
+            cout << temp << " ";
+            temp = (temp == 1) ? 0 : 1;
+        }
+        cout << endl;
+    }
+
+    cout << "\n\n\n";
+
     return 0;
 }
